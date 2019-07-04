@@ -10,14 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var miles = 0.0
+    var kilometers = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         convertMilesToKilometers(miles: 26.2)
     }
-    
-    var miles = 0.0
-    var kilometers = 0.0
     
     func convertMilesToKilometers(miles: Double) {
         let conversionConstant = 1.6129
