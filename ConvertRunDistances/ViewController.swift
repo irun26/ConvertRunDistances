@@ -17,14 +17,11 @@ class ViewController: UIViewController {
     
     @IBAction func milesButtonPressed(_ sender: Any) {
         if let dataEntered = Double(enterDistanceLabel.text!) {
-            print("distance entered is \(dataEntered)")
             miles = dataEntered
         } else {
             print("distance entered is not a number")
         }
-        print("data enter is \(miles) mi")
         computedDistanceLabel.text = "\(convertMilesToKilometers(miles: miles).rounded()) km"
-        
     }
     
     @IBAction func kilometersButtonPressed(_ sender: Any) {
@@ -34,22 +31,13 @@ class ViewController: UIViewController {
         } else {
             print("distance entered is not a number")
         }
-        print("data enter is \(kilometers) km")
         computedDistanceLabel.text = "\(convertKilometersToMiles(kilometers: kilometers).rounded()) mi"
-
     }
     
     @IBOutlet weak var computedDistanceLabel: UILabel!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        convertMilesToKilometers(miles: 50.0)
-//        convertKilometersToMiles(kilometers: 100.0)
-        
     }
-    
 }
 
