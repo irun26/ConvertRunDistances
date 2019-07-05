@@ -10,16 +10,18 @@ import Foundation
 
 let conversionConstant = 1.6129
 
-func convertMilesToKilometers(miles: Double) {
-    print(miles)
+func convertMilesToKilometers(miles: Double) -> Double{
+    print(miles) //delete later
     
     let computedKilometers = conversionConstant * (miles)
-    print("\(miles) mi is \(computedKilometers) km ")
+    print("\(miles) mi is \(computedKilometers) km ") //delete later
+    return computedKilometers
 }
 
-func convertKilometersToMiles(kilometers: Double) {
-    print(kilometers)
+func convertKilometersToMiles(kilometers: Double) -> Double {
+    print(kilometers) //delete later
     
     let computedMiles = (kilometers) / conversionConstant
-    print("\(kilometers) km is \(computedMiles) km ")
+    print("\(kilometers) km is \(computedMiles) km ") //delete later
+    return computedMiles
 }
